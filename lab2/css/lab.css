@@ -1,0 +1,22 @@
+body {
+  background-color: gray;
+}
+div {
+  background-color: white;
+  border-style: : dashed;
+  /*This command makes the background color of the divs white */
+}
+img{
+  width:300px;
+  height: 300px;
+}
+h1{
+  color: maroon;
+  font-family: "lucidia console", "courier new", monospace;
+}
+
+p{
+  text-align: right;
+  color: purple;
+  font-family: fantasy, "copperplate";
+}
