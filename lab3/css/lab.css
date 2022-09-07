@@ -1,0 +1,25 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Sansita+Swashed:wght@700&display=swap');
+nav{
+    border: dashed 10px #2F4858;
+}
+
+
+h1, h2, h5, p, ul{
+  font-style: oblique;
+    text-shadow: 0 0 5px black;
+}
+body {
+    background-color: #gray;
+}
+a {
+  text-decoration: none;
+    color: maroon;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+p, ul{
+  font-size: 20px;
+}
