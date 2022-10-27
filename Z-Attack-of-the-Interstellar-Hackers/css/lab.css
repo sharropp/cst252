@@ -1,0 +1,20 @@
+
+#title{
+	font-size: 50px;
+  animation: fadeIn 5s;
+	text-align: center;
+	color: Yellow;
+}
+#gameStart{
+	font-style: italic;
+	color: white;
+  cursor: pointer;
+}
+
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body{
+	background-color: black;
+}
