@@ -1,0 +1,61 @@
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Merriweather:ital,wght@1,900&family=Sansita+Swashed:wght@700&display=swap');
+nav{
+    border: dashed 10px #2F4858;
+}
+
+h1, h2, h5, p, ul{
+  font-style: oblique;
+    text-shadow: 2px black;
+}
+body {
+    background-color: #gray;
+}
+a {
+  text-decoration: none;
+    color: maroon;
+}
+a:hover {
+    text-decoration: underline;
+    text-decoration-style: wavy;
+}
+p, ul, h2, h5{
+  font-size: 20px;
+  color: black;
+  word-spacing: 5px;
+}
+/* animation 1 */
+.fadeInAnimation {
+	transition-property: color;
+	transition-duration: 2s;
+}
+
+.fadeOutAnimation {
+	transition-property: color;
+	transition-duration: 1s;
+}
+
+
+.hover {
+	color: black;
+}
+
+
+.text-end-frame {
+	color: red;
+  text-decoration: underline;
+}
+
+/* animation 2 */
+.imgAnimation {
+	transform: scale(1.5);
+	transition-duration: 2s;
+}
+
+.imgHover {
+	width: 300px;
+}
+
+.img-end-frame {
+	width: 500px;
+}
