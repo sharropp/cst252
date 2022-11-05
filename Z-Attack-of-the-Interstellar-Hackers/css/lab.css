@@ -18,5 +18,5 @@
 body{
 	background-image: url("https://media.giphy.com/media/8PEbUBEwxktyNeqVZ4/giphy.gif");
 	background-color: black;
-  background-size: cover; // this makes img full-screen (full-width & full-height)
+  background-size: cover; 
 }

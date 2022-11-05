@@ -47,15 +47,10 @@ p, ul, h2, h5{
 }
 
 /* animation 2 */
-.imgAnimation {
-	transform: scale(1.5);
-	transition-duration: 2s;
+img{
+  transition-property: rotate;
+  transition-duration: 1s;
 }
-
-.imgHover {
-	width: 300px;
-}
-
-.img-end-frame {
-	width: 500px;
+img:hover{
+  rotate: 360deg;
 }
