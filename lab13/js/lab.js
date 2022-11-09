@@ -27,18 +27,3 @@
 	text.addEventListener('mouseout', textOut);
 
  });
-// animation 2- making the gif grow in size slowly
- // let img = document.getElementById("#img");
- //
- // let imgHover = (e) => {
- //   img.classList.add('img-end-frame', 'imgAnimation');
- // }
- //
- // img.addEventListener('mouseover', imgHover);
- //
- // let imgOut = (e) => {
- //   img.classList.remove('img-end-frame');
- //   img.classList.remove('imgAnimation')
- // }
- //
- // img.addEventListener('mouseout', imgOut);
