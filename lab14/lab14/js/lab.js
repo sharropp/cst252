@@ -22,6 +22,8 @@ console.log('code works')
 			let newBox = document.createElement('div');
 			console.log(newBox);
 			newBox.classList.add('.box');
+			let parent = document.querySelector('#body');
+			parent.appendChild(newBox);
 			//added parenthesis to "you won" string
 			newBox.text = ('You won!');
 
