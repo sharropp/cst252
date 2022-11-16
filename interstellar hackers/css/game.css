@@ -1,0 +1,16 @@
+#gameStart{
+	font-style: italic;
+	color: white;
+	animation: fadeIn 7s;
+	text-align: center;
+	font-family: lores-12,sans-serif;
+font-weight: 700;
+font-style: normal;
+}
+
+ body{
+	background-image: url("../img/hackerscreen.png");
+	background-color: black;
+  background-size: cover;
+  height: 100vh;
+}

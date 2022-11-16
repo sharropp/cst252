@@ -1,0 +1,36 @@
+
+#title{
+	font-size: 50px;
+  animation: fadeIn 5s;
+	text-align: center;
+	color: Yellow;
+	font-family: lores-12,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	text-shadow: color: white;
+	-webkit-text-stroke-width: 2px;
+  -webkit-text-stroke-color: #8B8900;
+}
+#gameStart{
+	font-style: italic;
+	color: white;
+	animation: fadeIn 7s;
+	text-align: center;
+	font-family: lores-12,sans-serif;
+	font-weight: 700;
+	font-style: normal;
+	cursor: pointer;
+}
+#gameStart img{
+	height: auto;
+	width: 25%;
+}
+@keyframes fadeIn {
+  0% { opacity: 0; }
+  100% { opacity: 1; }
+}
+body{
+	background-image: url("../img/alienbackground.png");
+	background-color: black;
+  background-size: cover;
+}

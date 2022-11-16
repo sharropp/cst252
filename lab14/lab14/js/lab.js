@@ -21,7 +21,8 @@ console.log('code works')
 			console.log("input is equal to 6");
 			let newBox = document.createElement('div');
 			console.log(newBox);
-			newBox.classList.add('.box');
+			newBox.classList.add('box');
+			//my attempt of using append child to add the created div into the html
 			let parent = document.querySelector('#body');
 			parent.appendChild(newBox);
 			//added parenthesis to "you won" string
