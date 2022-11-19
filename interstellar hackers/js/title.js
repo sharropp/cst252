@@ -7,6 +7,4 @@ document.addEventListener('DOMContentLoaded', () => {
   function loadNewPage(){
     window.location="game.html";
   }
-
-
 });

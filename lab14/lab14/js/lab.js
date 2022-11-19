@@ -16,7 +16,7 @@ console.log('code works')
 //had to add an e in the parenthesis
 	let inputHandler = (e) => {
 		console.log("function is work");
-		//added ''around 6 to turn it into a string
+		//added '' around 6 to turn it into a string
 		if (e.currentTarget.value === '6'); {
 			console.log("input is equal to 6");
 			let newBox = document.createElement('div');
