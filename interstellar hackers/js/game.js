@@ -3,6 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
   let display = document.querySelector('.display');
   let guessQuerySelector = document.querySelector('#character');
   let textForm = document.querySelector('.textForm');
+
 //wordbank
   var wordBank = [
     "millenium", "deathstar","asteroid","comet","galaxy","meteor","moon","saturn",
@@ -44,18 +45,24 @@ document.addEventListener('DOMContentLoaded', () => {
     console.log('randomWord', randomWord);
   })
 
-  //making "_" equal to length of randomized word
+  //making the ammount of "_" equal to letter length of randomized word
   let underscore = randomWord.length;
   let result = randomWord.replace(/.?/g,"_ ");
   document.getElementById("guess").innerHTML=result;
 
-  //replacing "_" with the correct letters guessed
-  //if input = correct find spot in array that has the correct letters
-  //then unhide correctly guessedletter which hides underscore
+  //replacing "_" with the correct letters when guess contains letter that are correct
 
-  //problems: variable guessWord keeps saying that it is undefined, and consolelog doesnt want to work
-if (guessWord != null) {
-  if(/^[a-zA-Z]/.test(guessWord) && guessWord.length == 1) {
+  //plan:
+  //if input = correct find spot in array that has the correct letters
+  //then unhide correctly guessed letter which hides underscore
+
+  //current problems:
+  //the if statement is an attempt to make the code run after a guess is made
+  //else statement goes instantly and doesnt wait until an input is made
+  //use event handlers so the code works when clicked instead of on load
+
+if (guessQuerySelector != null) {
+  if(/^[a-zA-Z]/.test(guessQuerySelector) && guessQuerySelector.length == 1) {
   checkLetter();
 console.log('test');
   }
@@ -69,16 +76,36 @@ console.log('test');
   );
   }
   function checkLetter() {
-  let matchedLetters = randomWord.match(guessWord);
-  return replaceAt(result, matchedLetters.index, guessWord);
+  let matchedLetters = randomWord.match(guessQuerySelector);
+  return replaceAt(result, matchedLetters.index, guessQuerySelector);
   }
 }
 
+//make each underscore into its own div so its easier to select the underscore
+//make divs float left so they are next to eachother
+//problem with this is that all words need the same length
 
+//attempts left code
+if (document.getElementsByTagName("button")) {
+  document.getElementsByTagName("button".onclick = alert("attempt"));
+  console.log('if statement worked');
+  //use event handlers so the code works when clicked instead of on load
+  //combine code above with this in an on click event handler
+}
+
+
+//win and loss condition
 });
 
-
-//make side div
-//count legth of word
-//make ____ equal to length of word
+//gameplan and steps needed to follow:
+//make side div V
+//count legth of word V
+//make ____ equal to length of word V
 //once it hits letter it puts correct letter in correct spot
+//once this is done work on "attempts left"
+//once that is done work on win condition and loss condition
+//then work on css and refining looks and code
+//ideas of things to add if we have time:
+//-music
+//-easter eggs
+//-
