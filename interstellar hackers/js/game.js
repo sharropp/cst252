@@ -12,8 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
   ];
 
   // Grabbing Random Word
-  var getRandomWord = function(array) {
-    return array[Math.floor(Math.random() * array.length)];
+  if (attempts = 0) {
+    var getRandomWord = function(array) {
+      return array[Math.floor(Math.random() * array.length)];
+    }
   }
 
   var randomWord = getRandomWord(wordBank);
@@ -59,39 +61,53 @@ document.addEventListener('DOMContentLoaded', () => {
   //current problems:
   //the if statement is an attempt to make the code run after a guess is made
   //else statement goes instantly and doesnt wait until an input is made
+
   //use event handlers so the code works when clicked instead of on load
 
-if (guessQuerySelector != null) {
-  if(/^[a-zA-Z]/.test(guessQuerySelector) && guessQuerySelector.length == 1) {
-  checkLetter();
-console.log('test');
-  }
-
-  else{
-      console.log("You need to put one letter");
-  }
-  function replaceAt(str, index, replacement) {
-  return (
-    str.substr(0, index) + replacement + str.substr(index + replacement.length)
-  );
-  }
-  function checkLetter() {
-  let matchedLetters = randomWord.match(guessQuerySelector);
-  return replaceAt(result, matchedLetters.index, guessQuerySelector);
-  }
-}
+//   function checkLetter() {
+//   let matchedLetters = randomWord.match(guessQuerySelector);
+//   return replaceAt(result, matchedLetters.index, guessQuerySelector);
+//   }
+// function replacer() {
+//   if(/^[a-zA-Z]/.test(guessQuerySelector) && guessQuerySelector.length == 1) {
+//   checkLetter();
+// console.log('test');
+//   }
+//
+//   else{
+//       console.log("You need to put one letter");
+//   }
+//   function replaceAt(str, index, replacement) {
+//   return (
+//     str.substr(0, index) + replacement + str.substr(index + replacement.length)
+//   );
+//   }
+//
+// }
+// document.querySelector('.textForm').addEventListener("click", replacer);
 
 //make each underscore into its own div so its easier to select the underscore
 //make divs float left so they are next to eachother
 //problem with this is that all words need the same length
 
 //attempts left code
-if (document.getElementsByTagName("button")) {
-  document.getElementsByTagName("button".onclick = alert("attempt"));
-  console.log('if statement worked');
-  //use event handlers so the code works when clicked instead of on load
-  //combine code above with this in an on click event handler
-}
+
+let attempts = 0;
+  function attempts_FUN () {
+  if (attempts < 5) {
+  attempts ++;
+ console.log(attempts);
+ }
+ else {
+   console.log('max ammount reached')
+ }
+  }
+document.querySelector('.textForm').addEventListener("click", attempts_FUN);
+
+  // document.querySelector('.textForm').addEventListener("click", replacer);
+  // use event handlers so the code works when clicked instead of on load
+  // combine code above with this in an on click event handler
+
 
 
 //win and loss condition

@@ -5,6 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
   gameStart.addEventListener("click", loadNewPage);
 
   function loadNewPage(){
-    window.location="game.html";
+    window.location="index.html";
   }
 });
