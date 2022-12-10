@@ -108,11 +108,11 @@ let wordList = [
         hint: "main mode of transport at the moment for space travel"
     },
     {
-        word: "NASA",
+        word: "nasa",
         hint: "a US based government funded agency based on space research"
     },
     {
-        word: "UFO",
+        word: "ufo",
         hint: "alien transport"
     },
     {
@@ -140,7 +140,7 @@ let wordList = [
         hint: "particles floating around space"
     },
     {
-        word: "dwarf star",
+        word: "dwarfstar",
         hint: "a smaller star"
     },
     {
