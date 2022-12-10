@@ -113,7 +113,7 @@ let wordList = [
     },
     {
         word: "UFO",
-        hint: "alein transport"
+        hint: "alien transport"
     },
     {
         word: "alien",
