@@ -1,3 +1,4 @@
+//
 const inputs = document.querySelector(".inputs"),
 hintTag = document.querySelector(".hint span"),
 guessLeft = document.querySelector(".guess-left span"),
