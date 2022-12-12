@@ -25,7 +25,7 @@ let wordList = [
     },
     {
         word: "meteor",
-        hint: "these rocks of varying size fall from space and hit earth"
+        hint: "these rocks of varying size fall from space and fall to earth"
     },
     {
         word: "moon",

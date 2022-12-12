@@ -127,3 +127,11 @@ body {
     color: lime;
   }
 }
+ .gameWon{
+  font-family: lores-12,sans-serif;
+  color: lime;
+}
+.gameOver{
+  font-family: lores-12,sans-serif;
+  color: red;
+}

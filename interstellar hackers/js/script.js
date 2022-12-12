@@ -45,27 +45,39 @@ function initGame(e) {
         wrongLetter.innerText = incorrectLetters;
     }
     typingInput.value = "";
-//win and loss conditions
+
     setTimeout(() => {
         if(correctLetters.length === word.length) {
-            alert(`Congrats! You found the word ${word.toUpperCase()}`);
+          document.querySelector(".gameWon").style.display = "block";
+          setTimeout(gameWonFUN,1000);
             return randomWord();
-        } else if(maxGuesses < 1) {
-            alert("Game over! You don't have remaining guesses");
+        }
+        else if(maxGuesses < 1) {
+          document.querySelector(".gameOver").style.display = "block";
+
             for(let i = 0; i < word.length; i++) {
                 inputs.querySelectorAll("input")[i].value = word[i];
             }
         }
     }, 100);
 }
-
 //return to title code
 const returnTitle = document.querySelector('.return-btn');
 function loadNewPage(){
   window.location="title.html";
 }
 
+//hiding gameover and game won screens as the page loads
+window.onload = function() {
+    document.querySelector(".gameOver").style.display = "none";
+    document.querySelector(".gameWon").style.display = "none";
+  }
+
 //event listeners
+resetBtn.addEventListener("click", function gameWonFUN (){
+document.querySelector(".gameWon").style.display = "none";})
+resetBtn.addEventListener("click", function gameOverFUN (){
+document.querySelector(".gameOver").style.display = "none";})
 returnTitle.addEventListener("click", loadNewPage);
 resetBtn.addEventListener("click", randomWord);
 typingInput.addEventListener("input", initGame);
